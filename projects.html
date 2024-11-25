@@ -3,15 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/header.css">
     <title>Tomas Toler - Projects</title>
+    <style>
+        main {
+            height: 100%;
+            border-radius: 1em;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    <h3>My projects</h3>
-    <p>Here you can find some of my projects</p>
-    <ul>
-        <li><a href="#">Project 1</a></li>
-        <li><a href="#">Project 2</a></li>
-        <li><a href="#">Project 3</a></li>
-    </ul>
+    <header class="container header">
+        <h1><a href="/">Tomas Toler</a></h1>
+        <nav>
+            <a href="/about.html">About</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/Experience.html">Experience</a>
+        </nav>
+        <a href="/contact.html">Contact</a>
+    </header>
+    <main class="container">
+        <p>Projects page</p>
+    </main>
 </body>
 </html>
