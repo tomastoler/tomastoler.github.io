@@ -13,14 +13,14 @@ html {
 body {
     background-color: #fff;
     width: 100vw;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .container {
     width: 100vw;
-    padding: .5em 336px;
+    padding: .5em 576px;
 }
 
 .header {
@@ -55,6 +55,8 @@ body {
     text-decoration: underline;
 }
 
+/* <========== MAIN CONTENT ==========> */
+
 main {
     height: 100%;
     width: 100vw;
@@ -75,11 +77,11 @@ main {
 }
 
 .main-content img {
-    width: 230px;
+    width: 420px;
     height: auto;
     border-radius: 1em;
     object-fit: cover;
-    box-shadow: -5px 5px 10px #aaa;
+    box-shadow: -2px 4px 5px #aaa;
 }
 
 .main-content .text {
@@ -106,28 +108,76 @@ main {
     text-align: justify;
 }
 
+.education-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+
+    > .education-card {
+        padding-left: 2em;
+        display: flex;
+        align-items: center;
+        column-gap: 1em;
+    
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 1em;
+        }
+
+        > .text {
+            display: flex;
+            flex-direction: column;
+            row-gap: .5em;
+        }
+
+    }
+}
+
 .experience-section {
     display: flex;
     flex-direction: column;
     row-gap: 2em;
+
+    > .experience-card {
+        padding-left: 2em;
+        display: flex;
+        align-items: center;
+        column-gap: 1em;
+
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 1em;
+        }
+
+        > .text {
+            display: flex;
+            flex-direction: column;
+            row-gap: .5em;
+        }
+
+        > .date {
+            color: teal;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    }
 }
 
-.experience-card {
-    width: 100%;
-    height: 300px;
-    background-color: #c3c3c3;
-    border-radius: 1em;
-    padding: 1.5em;
-    display: flex;
-    flex-direction: column;
-}
 
-.experience-card h3 {
-    font-size: 1.2em;
-    margin-bottom: .5em;
-}
+/* <========== RESPONSIVE DESIGN ==========> */
 
-.experience-card .date{
-    font-size: .8em;
-    margin-bottom: .8em;
+@media screen and (max-width: 1366px) {
+    .container {
+        padding: .5em 336px;
+    }
+
+    .main-content img {
+        width: 230px;
+        height: auto;
+        border-radius: 1em;
+        object-fit: cover;
+        box-shadow: -5px 5px 10px #aaa;
+    }
 }
