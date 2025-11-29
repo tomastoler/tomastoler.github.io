@@ -3,27 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomas Toler</title>
-    <link rel="stylesheet" href="./static/css/styles.css">
+    <title>Mi Portafolio Personal - Tomas Toler</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
-    <header class="container header">
-        <h1>
-            <a href="/">Tomas Toler</a>
-        </h1>
-        <nav>
-        </nav>
+
+    <header>
+        <div class="header-content">
+            <img src="/static/images/foto_de_perfil.jpg" alt="Foto de Perfil" class="profile-pic">
+            <h1>Tomas Toler</h1>
+            <p>Técnico en Informática</p>
+        </div>
     </header>
-    <main class="container">
-        <section class="main-content">
-            <img src="/static/images/foto-perfil.jpg" alt="Tomas Toler profile picture">
-            <div class="text">
-                <h1>Tomas Toler</h1>
-                <span>Técnico Informático</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi cum voluptatum itaque, rem aliquam quod.</p>
-                <button>Contactame</button>
+
+    <main>
+        <section id="sobre-mi" class="section">
+            <h2>👋 Sobre Mí</h2>
+            <p>Una breve introducción sobre quién eres, qué haces y cuáles son tus principales intereses profesionales. ¡Sé conciso y directo!</p>
+            <p><em>"Soy un profesional apasionado por [tu campo], con habilidades en [habilidad 1] y [habilidad 2], buscando aplicar mis conocimientos para..."</em></p>
+        </section>
+        
+        <hr>
+
+        <section id="estudios" class="section">
+            <h2>🎓 Estudios y Formación</h2>
+            <div class="timeline">
+
+                <article class="timeline-item">
+                    <h3>Licenciatura en Ciencias de Datos</h3>
+                    <p class="institution">Universidad de Buenos Aires</p>
+                    <p class="date">2025-Presente</p>
+                    <p>Estoy cursando en cbc en la facultad de ciencias exactas y naturales de la UBA.</p>
+                </article>
+                
+                <article class="timeline-item">
+                    <h3>Técnico en informática</h3>
+                    <p class="institution">Escuela Técnica de la Universidad de Mendoza</p>
+                    <p class="date">2019 - 2024</p>
+                    <p>Cuento con habilidades y conocimientos sobre programación y configuracióny reparación de equipos informáticos y de red. </p>
+                </article>
+                
+                
             </div>
         </section>
+
+        <hr>
+
+        <section id="experiencia" class="section">
+            <h2>💼 Experiencia Laboral</h2>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <h3>Programador</h3>
+                    <p class="institution">ITC S.A.</p>
+                    <p class="date">6/10/24 - 9/11/24</p>
+                    <ul>
+                        <li>Desarrollo de nuevas funcionalidades de una aplicación ya existente.</li>
+                        <li>Documentación de las nuevas funcionalidades.</li>
+                        <li>Automatización de tareas de control de equipos de red.</li>
+                    </ul>
+                </article>
+
+                <!-- <article class="timeline-item">
+                    <h3>[Otro Puesto de Trabajo]</h3>
+                    <p class="institution">[Nombre de la Empresa]</p>
+                    <p class="date">[Fecha de Inicio] - [Fecha de Finalización]</p>
+                    <ul>
+                        <li>Responsabilidad/Logro.</li>
+                    </ul>
+                </article> -->
+            </div>
+        </section>
+
     </main>
+
+    <footer>
+        <p>Contacto: <a href="mailto:tomastoler@gmail.com">tomastoler@gmail.com</a> | Teléfono: (+54) 261 341-5265 | <a href="https://www.linkedin.com/in/tomastoler/">LinkedIn</a></p>
+        <p>&copy; 2025 Tomás Toler. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
