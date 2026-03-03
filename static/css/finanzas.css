@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #007bff; /* Un azul vibrante */
+    --secondary-color: #6c757d; /* Gris para texto */
+    --background-color: #f8f9fa; /* Fondo claro */
+    --card-background: #ffffff; /* Fondo de tarjetas */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

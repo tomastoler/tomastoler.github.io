@@ -1,12 +1,10 @@
-/* Variables para colores (opcional, pero útil) */
 :root {
-    --primary-color: #007bff; /* Un azul vibrante */
-    --secondary-color: #6c757d; /* Gris para texto */
-    --background-color: #f8f9fa; /* Fondo claro */
-    --card-background: #ffffff; /* Fondo de tarjetas */
+    --primary-color: #007bff; 
+    --secondary-color: #6c757d; 
+    --background-color: #f8f9fa;
+    --card-background: #ffffff; 
 }
 
-/* Estilos Globales */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -16,14 +14,12 @@ body {
     color: #333;
 }
 
-/* Contenedor principal para centrar el contenido */
 main {
     max-width: 900px;
     margin: 20px auto;
     padding: 0 40px;
 }
 
-/* Encabezado */
 header {
     background-color: var(--primary-color);
     color: white;
@@ -37,7 +33,6 @@ header {
     margin: 0 auto;
 }
 
-/* Foto de Perfil */
 .profile-pic {
     width: 150px;
     height: 150px;
@@ -57,7 +52,6 @@ header p {
     font-style: italic;
 }
 
-/* Secciones Generales */
 .section {
     padding: 20px 0;
     margin-bottom: 20px;
@@ -75,7 +69,6 @@ header p {
     margin-bottom: 20px;
 }
 
-/* Línea de tiempo (Estudios y Experiencia) */
 .timeline {
     border-left: 2px solid #ccc;
     padding-left: 20px;
@@ -87,7 +80,6 @@ header p {
     padding-bottom: 15px;
 }
 
-/* El círculo del timeline */
 .timeline-item::before {
     content: '';
     position: absolute;
@@ -112,7 +104,6 @@ header p {
     display: block;
 }
 
-/* Footer (Pie de página) */
 footer {
     text-align: center;
     padding: 20px;
@@ -131,7 +122,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Estilos de lista */
 ul {
     padding-left: 20px;
 }
