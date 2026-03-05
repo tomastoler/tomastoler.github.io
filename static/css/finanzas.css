@@ -1,21 +1,104 @@
 :root {
-    --primary-color: #007bff; /* Un azul vibrante */
-    --secondary-color: #6c757d; /* Gris para texto */
-    --background-color: #f8f9fa; /* Fondo claro */
-    --card-background: #ffffff; /* Fondo de tarjetas */
+    --primary: #007bff;
+    --success: #00b894;
+    --border: #edf2f7;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+:root {
+    --primary: #007bff; /* El azul de tu web actual */
+    --bg: #f0f2f5;
+    --card-bg: #ffffff;
+    --text-main: #2d3436;
+    --text-sec: #636e72;
+    --up: #00b894;
+    --down: #d63031;
+    --success: #00b894;
+    --border: #edf2f7;
 }
 
 body {
+    background-color: var(--bg);
+    font-family: 'Inter', -apple-system, sans-serif;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.header { text-align: center; margin-bottom: 50px; }
+
+/* Grilla principal: 5 columnas alineadas al inicio (top) */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    align-items: start; /* IMPORTANTE: Las cartas no se estiran para igualar a la más alta */
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .cards-grid { grid-template-columns: repeat(5, 1fr); }
+}
+
+/* Estilo de la Carta */
+.portfolio-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: box-shadow 0.2s;
+    overflow: hidden;
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    flex-direction: column;
+}
+
+.card-content {
+    padding: 1.2rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 1rem; /* Espaciado uniforme entre secciones */
+}
+
+/* Sección de Activos: Se ajusta al contenido */
+.assets-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.asset-item {
+    font-size: 0.85rem;
+    padding: 4px 0;
+    border-bottom: 1px solid #f9f9f9;
+    color: #4a5568;
+}
+
+/* Sección Financiera: Siempre al final del contenido */
+.financial-summary {
+    background: #f8fafc;
+    margin: 0 -1.2rem -1.2rem -1.2rem; /* Expande al borde de la carta */
+    padding: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.stat-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: 0.8rem;
+}
+
+.stat-group.highlight {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px dashed #cbd5e0;
+}
+
+.value { font-weight: 600; }
+.positive { color: var(--success); }
+
+/* Estilo para el campo vs Inflación */
+.real-gain {
+    background: var(--success);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.75rem;
 }
